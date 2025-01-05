@@ -1,0 +1,27 @@
+.breadcrums {
+    margin-top: 7rem;
+    margin-left: 3rem;
+
+}
+
+.breadcrums p {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.breadcrums p img {
+    margin: 0 8px 0;
+}
+
+/* resposive style for mobile devices */
+@media(max-width:576px) {
+    .breadcrums p {
+        font-size: 11px;
+    }
+
+    .breadcrums p img {
+        height: 0.7rem;
+    }
+
+}

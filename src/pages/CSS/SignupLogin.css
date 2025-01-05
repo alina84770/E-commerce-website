@@ -1,0 +1,67 @@
+/* Form Styles */
+form {
+    margin: 4rem 0;
+}
+
+/*utility class*/
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.form-container {
+    width: 90%;
+    max-width: 450px;
+    border: 1px solid gray;
+    padding: 0 2.5rem 1rem;
+    border-radius: 5px;
+    margin-top: 3rem; 
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #f62525;
+}
+
+/* Input Fields */
+ .input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 1.3rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+    font-size: 18px;
+}
+
+/* Button */
+.btn-signup button {
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #f62525;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: transform 0.5s ease-in-out, background-color 0.3s ease;
+}
+
+.btn-signup button:hover {
+    background-color: #ec0404;
+    transform: scale(1.04);
+}
+
+.acount span {
+    color: #f62525;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.error-msg{
+    color: #ec0404;
+    font-size: 0.8rem;
+    margin:-0.1rem 0;
+}

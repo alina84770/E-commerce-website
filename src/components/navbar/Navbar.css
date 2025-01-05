@@ -1,0 +1,128 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding-top: 4px;
+    box-shadow: 0 0 5px lightgray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* utility class */
+.flex {
+    display: flex;
+}
+
+div.logo img {
+    width: 4rem;
+    height: 4rem;
+}
+
+div.logo p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+div.navlink ul {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    margin-left: 5rem;
+}
+
+div.navlink ul li {
+    list-style-type: none;
+}
+
+.navlink ul li button {
+    padding: 13px 25px;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navlink ul li button:hover {
+    background-color: beige;
+    cursor: pointer;
+}
+
+.navlink ul li img {
+    width: 1.9rem;
+}
+
+.navlink ul li img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navlink ul li div.counter {
+    width: 18px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    position: relative;
+    right: 0.4rem;
+    top: -0.4rem
+}
+
+.menu-icon {
+    position: relative;
+    right: 0rem;
+    font-size: 1.3rem;
+    display: none;
+}
+
+.default-links {
+    color: black;
+    text-decoration: none;
+}
+
+.active-links {
+    color: red;
+    text-decoration: none;
+}
+
+
+
+@media(max-width:1050px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navlink ul {
+        display: none !important;
+    }
+
+    .navlink ul.responsive-links {
+        display: flex !important;
+        /* Show when responsive-links class is added */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: rgba(250, 159, 79, 0.6);
+        top: 5rem;
+        right: 0.5rem;
+        width: 15rem;
+        padding: 1rem 0;
+        border-radius: 1rem;
+    }
+
+    div.navlink ul {
+        gap: 1.5rem;
+    }
+
+    .navlink ul li button {
+        padding: 10px 20px;
+        font-size: 12px;
+        background-color: red;
+        color: white;
+    }
+}

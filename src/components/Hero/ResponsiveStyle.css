@@ -1,0 +1,56 @@
+@media(max-width:850px) {
+    .hero-section .hero-right img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .hand-icon img {
+        display: none;
+    }
+
+    .hero-left p.hero-text {
+        margin-top: 4rem;
+    }
+
+    .hero-left p {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .hero-left button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:576px) {
+    .hero-section .hero-right img {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .hero-left p {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .hero-left button {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:450px) {
+    .hero-section .hero-right img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .hero-left p.hero-text {
+        font-size: 1.3rem;
+    }
+
+    .hero-left button i {
+        display: none;
+    }
+}

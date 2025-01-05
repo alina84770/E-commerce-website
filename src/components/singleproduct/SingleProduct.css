@@ -1,0 +1,140 @@
+.single-page {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 2rem;
+
+}
+
+.single-page-left {
+    display: flex;
+}
+
+.left-images {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.left-images img {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 1rem;
+}
+
+.left-images img:hover,
+.right-image img:hover {
+    transform: scale(0.97);
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-image img {
+    width: 22rem;
+    height: 28rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
+.single-page-right {
+    margin-left: 3rem;
+}
+
+.single-page-right p.product-name {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.price p {
+    font-weight: bold;
+}
+
+.price span {
+    font-weight: lighter;
+    margin-left: 1rem;
+    color: red;
+    text-decoration: line-through;
+}
+
+.description p {
+    font-size: 1rem;
+}
+
+.product-size button {
+    padding: 5px;
+    margin-right: 0.5rem;
+    width: 2.3rem;
+    margin: 2px;
+}
+
+.add-to-cart-btn {
+    margin-top: 1rem;
+}
+
+.add-to-cart-btn button {
+    padding: 12px 15px;
+    background-color: #f82727;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.add-to-cart-btn button:hover {
+    cursor: pointer;
+    background-color: #ec0404;
+    transform: scale(1.04);
+    transition: transform 0.5s ease-in-out;
+}
+
+.single-page-right p span {
+    font-weight: bold;
+}
+
+div.catagory-tags {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+
+@media (max-width:1050px) {
+    .left-images img {
+        display: none;
+    }
+}
+
+@media (max-width:876px) {
+    .right-image img {
+        width: 18rem;
+    }
+
+    .single-page-right p.product-name {
+        font-size: 1.1rem;
+    }
+
+    .description p {
+        font-size: 0.8rem;
+    }
+
+    .add-to-cart-btn button {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    div.catagory-tags {
+        display: none;
+    }
+}
+
+@media(max-width:576px) {
+    .single-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-image img {
+        height: 20rem;
+    }
+}

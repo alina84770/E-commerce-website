@@ -1,0 +1,31 @@
+.popular-section {
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+
+.popular-section h2 {
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+
+/* responsive style */
+@media(max-width:1050px) {
+    .products {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+@media(max-width:450px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+}

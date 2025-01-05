@@ -1,0 +1,7 @@
+div.invalid-page {
+    margin: 2rem 3rem;
+}
+
+div.invalid-page p {
+    color: red;
+}

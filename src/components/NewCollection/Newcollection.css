@@ -1,0 +1,14 @@
+.new-collections {
+    margin-top: 5rem;
+}
+
+.new-collections h2 {
+    text-align: center;
+}
+
+.collection-products {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 3rem;
+}

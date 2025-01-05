@@ -1,0 +1,61 @@
+.news-letter {
+    width: 90%;
+    max-width: 900px;
+    margin: 5rem auto;
+    background: linear-gradient(180deg, #f3dcf5, #e1ffea22);
+    box-sizing: border-box;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.news-letter h1,.news-letter p {
+   text-align:center ;
+}
+
+.news-letter .input-field {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.news-letter .input-field input {
+    padding: 1.1rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 3rem;
+    width: 60%;
+    min-width: 200px;
+    font-size: 1.05rem;
+}
+
+.news-letter .input-field button {
+    padding: 1.1rem 2rem;
+    background-color: black;
+    border-radius: 3rem;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight:600;
+    position: relative;
+    right: 2.5rem;
+}
+
+.news-letter .input-field button:hover {
+    background-color: red;
+}
+
+
+
+ @media(max-width:576px) {
+    .news-letter h1 {
+        font-size: 1.3rem;
+    }
+    .news-letter p{
+        font-size: 0.8rem;
+    }
+    .news-letter .input-field input,.news-letter .input-field button  {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+} 
