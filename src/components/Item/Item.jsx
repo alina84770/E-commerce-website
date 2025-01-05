@@ -20,7 +20,7 @@ function Item(Props) {
         <>
             <div className='product-Card'>
                 <div className='card'>
-                    <Link to={`/product/${Props.id}`} ><img src={Props.src} alt="" /></Link>
+                    <Link to={`/product/${Props.id}`} ><img src={Props.src} alt="product-img" loading="lazy" /></Link>
                     <div className="product-content">
                         <p className="product-name">{Props.productname}</p>
                         <div class="price">

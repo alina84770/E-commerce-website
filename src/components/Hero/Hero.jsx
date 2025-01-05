@@ -30,7 +30,7 @@ function Hero() {
                 </div>
 
                 <div className="hero-right">
-                    <img src={heroImage} alt="" data-aos="fade-down-left" />
+                    <img src={heroImage} data-aos="fade-down-left" loading="lazy" />
                 </div>
             </div>
         </>

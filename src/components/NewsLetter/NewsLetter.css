@@ -9,8 +9,9 @@
     justify-content: center;
 }
 
-.news-letter h1,.news-letter p {
-   text-align:center ;
+.news-letter h1,
+.news-letter p {
+    text-align: center;
 }
 
 .news-letter .input-field {
@@ -36,7 +37,7 @@
     color: white;
     border: none;
     font-size: 16px;
-    font-weight:600;
+    font-weight: 600;
     position: relative;
     right: 2.5rem;
 }
@@ -47,15 +48,18 @@
 
 
 
- @media(max-width:576px) {
+@media(max-width:576px) {
     .news-letter h1 {
         font-size: 1.3rem;
     }
-    .news-letter p{
+
+    .news-letter p {
         font-size: 0.8rem;
     }
-    .news-letter .input-field input,.news-letter .input-field button  {
+
+    .news-letter .input-field input,
+    .news-letter .input-field button {
         padding: 0.8rem;
         font-size: 0.9rem;
     }
-} 
+}

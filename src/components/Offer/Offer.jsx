@@ -16,7 +16,7 @@ function Offer() {
                     <div className="offer-btn"> <button>check now</button></div>
                 </div>
                 <div className="offer-right" data-aos="fade-down">
-                    <img src={image} alt="" />
+                    <img src={image} alt="" loading="lazy" />
                 </div>
             </div>
         </>

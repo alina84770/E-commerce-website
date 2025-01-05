@@ -16,7 +16,7 @@ function Category(Props) {
         <>
             <div className="category">
                 <div class="banner-section" data-aos="fade-down">
-                    <img className="banner" src={Props.banner} alt="" />
+                    <img className="banner" src={Props.banner} loading="lazy" />
                 </div>
                 <div className="products-sort">
                     <p>
