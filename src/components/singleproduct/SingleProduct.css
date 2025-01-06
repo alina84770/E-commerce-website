@@ -134,7 +134,14 @@ div.catagory-tags {
         flex-direction: column;
     }
 
+    .single-page-right {
+        margin-left: 0;
+        padding: 0 1rem;
+    }
+
+
     .right-image img {
         height: 20rem;
+        margin-left: 0;
     }
 }

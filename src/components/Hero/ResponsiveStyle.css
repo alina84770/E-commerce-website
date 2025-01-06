@@ -24,6 +24,10 @@
 }
 
 @media(max-width:576px) {
+    .hero-section {
+        margin-top: 4.4rem;
+    }
+
     .hero-section .hero-right img {
         width: 16rem;
         height: 16rem;
@@ -44,6 +48,10 @@
     .hero-section .hero-right img {
         width: 12rem;
         height: 12rem;
+    }
+
+    .hero-left{
+        margin-left: 1rem;
     }
 
     .hero-left p.hero-text {

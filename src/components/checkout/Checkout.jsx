@@ -42,7 +42,7 @@ function Checkout() {
                 <div className="order-detail flex-center" data-aos="fade-up">
                     <table className="checkout-table">
                         <thead>
-                            <tr>
+                            <tr className='head'>
                                 <th>Product</th>
                                 <th>Price</th>
                                 <th>Quantity</th>

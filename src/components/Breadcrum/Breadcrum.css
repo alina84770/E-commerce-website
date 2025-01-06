@@ -16,6 +16,9 @@
 
 /* resposive style for mobile devices */
 @media(max-width:576px) {
+    .breadcrums{
+        margin-left: 2.2rem;  
+    }
     .breadcrums p {
         font-size: 11px;
     }

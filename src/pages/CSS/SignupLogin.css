@@ -11,10 +11,10 @@ form {
 
 /* Container */
 .form-container {
-    width: 90%;
+    width: 85%;
     max-width: 450px;
     border: 1px solid gray;
-    padding: 0 2.5rem 1rem;
+    padding: 0 2.2rem 1rem;
     border-radius: 5px;
     margin-top: 3rem; 
 }

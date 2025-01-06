@@ -14,9 +14,9 @@
 form.checkout {
     border-radius: 1rem;
     border: 1px solid red;
-    width: 90%;
+    width: 85%;
     max-width: 27rem;
-    padding: 0.7rem 2rem 1rem;
+    padding: 0.7rem 1.5rem 1rem;
     cursor: pointer;
 }
 
@@ -78,7 +78,7 @@ form.checkout h3 {
 /* order detail table styling */
 
 .order-detail table {
-    width: 90%;
+    width: 80%;
     max-width: 700px;
     border-collapse: collapse;
 }
@@ -102,8 +102,8 @@ table.checkout-table tr td {
     font-size: 0.9rem;
 }
 
-table.checkout-table tr:hover {
-    background-color: #f06f6f;
+table.checkout-table tr.head{
+    background-color:red;
     color: white;
 }
 

@@ -65,6 +65,12 @@
     }
 }
 
+@media(max-width:576px){
+    .banner-section {
+        margin-top: 4.4rem;
+    }    
+}
+
 
 @media(max-width:450px) {
     .category-products {

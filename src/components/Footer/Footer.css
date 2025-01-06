@@ -51,10 +51,16 @@
         font-size: 1.3rem;
     }
 
-    .footer-links ul {
-        gap: 1rem;
+    .footer-links{
+        margin-top: 2rem;
+
     }
 
+    .footer-links ul {
+        gap: 0.8rem;
+        margin-right: 2.5rem;
+    }
+    
     .footer-links ul li {
         font-size: 0.8rem;
     }
