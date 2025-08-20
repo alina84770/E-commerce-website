@@ -8,29 +8,29 @@ let productData=[
     id:1,
     image:productImage1,
     productName:"Peplum Hem Blouse",
-    newPrice:'$80',
-    oldPrice:'$100',
+    newPrice:'50',
+    oldPrice:'100',
 },
 {
     id:2,
     image:productImage2,
     productName:"Peplum Hem Blouse",
-    newPrice:'$100',
-    oldPrice:'$120',
+    newPrice:'85',
+    oldPrice:'120',
 },
 {
     id:3,
     image:productImage3,
     productName:"Peplum Hem Blouse",
-    newPrice:'$150',
-    oldPrice:'$200',
+    newPrice:'60',
+    oldPrice:'200',
 },
 {
     id:4,
     image:productImage4,
     productName:"Peplum Hem Blouse",
-    newPrice:'$200',
-    oldPrice:'$220',
+    newPrice:'100',
+    oldPrice:'220',
 }
 
 ]

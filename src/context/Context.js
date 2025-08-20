@@ -23,8 +23,6 @@ export const ContextProvider = ({ children }) => {
     //increase quantity by '1' of particular id product when add to cart it
     const addToCart = (productId) => {
         setcartItems((prev) => ({ ...prev, [productId]: prev[productId] + 1 }));
-
-
     }
 
     //decrease quantity by '1' of particular id product when remove from cart it
@@ -41,7 +39,7 @@ export const ContextProvider = ({ children }) => {
             if (cartItems[product.id] > 0) {
                 TotalAmount += product.new_price * cartItems[product.id];
             }
-        })
+        })  
         return TotalAmount;
     }
 

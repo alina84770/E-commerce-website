@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import { CategoryProducts } from '../../context/Context';
 import { useState } from 'react';
 function Navbar() {
-    const { getTotalCartItems, islogin } = useContext(CategoryProducts);
+    const { getTotalCartItems, islogin, setlogin } = useContext(CategoryProducts);
     const [toggleNavLink, settoggleNavLink] = useState(false);
     console.log(toggleNavLink)
     return (
@@ -25,7 +25,7 @@ function Navbar() {
                         <li><NavLink to='/men' className={({ isActive }) => isActive ? "active-links" : "default-links"}>Men</NavLink></li>
                         <li><NavLink to='/women' className={({ isActive }) => isActive ? "active-links" : "default-links"}>Women</NavLink></li>
                         <li><NavLink to='/kids' className={({ isActive }) => isActive ? "active-links" : "default-links"}>Kids</NavLink></li>
-                        <li> <NavLink to='/signuplogin'><button>{islogin === true ? "Logout" : "Login"}</button></NavLink></li>
+                        <li> <NavLink to='/signuplogin'>{islogin === false ? <button>Login</button> : <button onClick={() => setlogin(false)}>Logout</button>}</NavLink></li>
                         <li className='cart flex'><NavLink to='/cart'><img src={cartIcon} alt="" /></NavLink><div className="counter">{getTotalCartItems()}</div></li>
                     </ul>
                 </div>

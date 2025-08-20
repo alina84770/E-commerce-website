@@ -5,3 +5,12 @@ div.invalid-page {
 div.invalid-page p {
     color: red;
 }
+
+button.go-back-btn{
+    padding: 0.7rem 1.1rem;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+    font-weight: bold;
+}

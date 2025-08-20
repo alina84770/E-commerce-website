@@ -1,9 +1,9 @@
-import './CSS/SignupLogin.css';
+import './SignupLogin.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useContext, useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import { CategoryProducts } from '../context/Context';
+import { CategoryProducts } from '../../context/Context';
 
 function SignupLoginForm() {
     const { setlogin } = useContext(CategoryProducts);

@@ -24,8 +24,8 @@ function Item(Props) {
                     <div className="product-content">
                         <p className="product-name">{Props.productname}</p>
                         <div class="price">
-                            <p class="new-price">{Props.newPrice}</p>
-                            <p class="old-price">{Props.oldPrice}</p>
+                            <p class="new-price">${Props.newPrice}</p>
+                            <p class="old-price">${Props.oldPrice}</p>
                         </div>
                     </div>
                     <div className="add-to-cart">

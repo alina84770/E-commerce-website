@@ -24,9 +24,10 @@ table.cart-table tr td img {
     border-radius: 5px;
 }
 
-table.cart-table tr td button {
-    width: 2.5rem;
-    height: 2.5rem;
+table.cart-table tr td div.quantity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 table.cart-table tr td i.fa-xmark:hover {
@@ -119,6 +120,7 @@ table.cart-table tr td i.fa-xmark:hover {
         font-size: 2rem;
         color: red;
     }
+
     .empty-cart img {
         width: 20rem;
         height: 22rem;
@@ -133,7 +135,7 @@ table.cart-table tr td i.fa-xmark:hover {
 }
 
 @media(max-width:550px) {
-    .empty-cart{
+    .empty-cart {
         margin-top: 4.5rem;
     }
 
@@ -162,7 +164,7 @@ table.cart-table tr td i.fa-xmark:hover {
         justify-content: center;
     }
 
-    .cart-total-amount p{
+    .cart-total-amount p {
         font-size: 0.9rem;
     }
 

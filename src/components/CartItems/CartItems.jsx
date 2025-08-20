@@ -12,7 +12,7 @@ function CartItems() {
         AOS.init({ duration: 1500 });
     }, []);
 
-    const { all_product, cartItems, removeFromCart, getTotalAmount } = useContext(CategoryProducts);
+    const { all_product, cartItems, addToCart, removeFromCart, getTotalAmount } = useContext(CategoryProducts);
 
     // Check if there are any items in the cart
     const hasItemsInCart = all_product.some((e) => cartItems[e.id] > 0);
@@ -32,17 +32,17 @@ function CartItems() {
                                 <th>Remove</th>
                             </tr>
 
-                            {all_product.map((e) => {
-                                if (cartItems[e.id] > 0) {
+                            {all_product.map((item) => {
+                                if (cartItems[item.id] > 0) {
                                     return (
 
                                         <tr>
-                                            <td><img src={e.image} alt="" /></td>
-                                            <td className='item-name'><p>{e.name}</p></td>
-                                            <td>${e.new_price}</td>
-                                            <td><button>{cartItems[e.id]}</button></td>
-                                            <td>${e.new_price * cartItems[e.id]}</td>
-                                            <td><i onClick={() => removeFromCart(e.id)} className="fa-solid fa-xmark" ></i></td>
+                                            <td><img src={item.image} alt="" /></td>
+                                            <td className='item-name'><p>{item.name}</p></td>
+                                            <td>${item.new_price}</td>
+                                            <td><div className='quantity'><button onClick={() => addToCart(item.id)}>+</button><p>{cartItems[item.id]}</p><button onClick={() => removeFromCart(item.id)}>-</button></div></td>
+                                            <td>${item.new_price * cartItems[item.id]}</td>
+                                            <td><i onClick={() => removeFromCart(item.id)} className="fa-solid fa-xmark" ></i></td>
                                         </tr>
 
 

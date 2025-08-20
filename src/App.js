@@ -5,13 +5,13 @@ import Shop from './pages/Shop';
 import Category from './pages/Category';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
-import SignupLoginForm from './pages/SignupLoginForm';
+import SignupLoginForm from './pages/form/SignupLoginForm';
 import menBanner from './components/assets/banner_mens.png';
 import womenBanner from './components/assets/banner_women.png';
 import kidsBanner from './components/assets/banner_kids.png';
 import Checkout from './components/checkout/Checkout';
 import NotFound from './components/NotFound/NotFound';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 
 
 const router = createBrowserRouter([
@@ -20,74 +20,20 @@ const router = createBrowserRouter([
     element:
       <>
         <Navbar />
-        <Shop />
+        <Outlet />
         <Footer />
-      </>
-  },
-  {
-    path: '/men',
-    element:
-      <>
-        <Navbar />
-        <Category category='men' banner={menBanner} />
-        <Footer />
-      </>
-  },
-  {
-    path: '/women',
-    element:
-      <>
-        <Navbar />
-        <Category category='women' banner={womenBanner} />
-        <Footer />
-      </>
-  },
-  {
-    path: '/kids',
-    element:
-      <>
-        <Navbar />
-        <Category category='kid' banner={kidsBanner} />
-        <Footer />
-      </>
-  },
-  {
-    path: '/cart',
-    element:
-      <>
-        <Navbar />
-        <Cart />
-        <Footer />
-      </>
-  },
-  {
-    path: '/signuplogin',
-    element:
-      <>
-        <Navbar />
-        <SignupLoginForm />
-      </>
-  },
-  {
-    path: '/product/:id',
-    element:
-      <>
-        <Navbar />
-        <Product />
-      </>
-  },
-
-  {
-    path: '/checkout',
-    element:
-      <>
-        <Navbar />
-        <Checkout/>
-      </>
-  },
-  {
-    path:'*',
-    element:<NotFound/>
+      </>,
+    errorElement: <NotFound />,
+    children: [
+      { path: '/', element: <Shop /> },
+      { path: 'men', element: <Category category='men' banner={menBanner} /> },
+      { path: 'women', element: <Category category='women' banner={womenBanner} /> },
+      { path: 'kids', element: <Category category='kid' banner={kidsBanner} /> },
+      { path: 'cart', element: <Cart /> },
+      { path: 'signuplogin', element: <SignupLoginForm /> },
+      { path: 'product/:id', element: <Product /> },
+      { path: 'checkout', element: <Checkout /> }
+    ]
   }
 
 ])
